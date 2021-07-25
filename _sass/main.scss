@@ -1,2 +1,55 @@
 @charset "utf-8";
+
+
+$primary: #00a1ff;
+$link: $primary;
+
+$navbar-item-active-color: white;
+$navbar-item-active-background-color: $primary;
+$navbar-breakpoint: 0px;
+
+$hero-body-padding: 3rem 4.5rem;
+$hero-body-padding-tablet: 3rem 4.5rem;
+
+$footer-padding: 3rem 1.5rem;
+
+
+nav a.navbar-item {
+  &,
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: black;
+  }
+}
+
+nav a.navbar-item.is-active {
+  &,
+  &:hover,
+  &:focus {
+    color: $navbar-item-active-color;
+    background-color: $navbar-item-active-background-color;
+  }
+}
+
+nav .navbar-item {
+  border-radius: 1rem;
+  margin: 5px;
+}
+
+#home {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(25, 25, 25) 100%), url(/assets/images/christoph.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+#uber-mich {
+  background-image: linear-gradient(to left, rgba(255,255,255,0) 0%, rgb(25, 25, 25) 75%), url(/assets/images/behandlung.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
 @import "bulma/bulma.sass";
