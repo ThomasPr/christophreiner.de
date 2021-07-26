@@ -3856,7 +3856,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus { color: #ee2049 !imp
 
 .hero-head, .hero-foot { flex-grow: 0; flex-shrink: 0; }
 
-.hero-body { flex-grow: 1; flex-shrink: 0; padding: 3rem 4.5rem; }
+.hero-body { flex-grow: 1; flex-shrink: 0; padding: 3rem 1.5rem; }
 
 @media screen and (min-width: 769px), print { .hero-body { padding: 3rem 4.5rem; } }
 
