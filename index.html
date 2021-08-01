@@ -1,7 +1,7 @@
 ---
 layout: null
 title: "Christoph Reiner, private Physiotherapie"
-description: ""
+description: "Physiotherapie · Osteopathie · Functional Fitness Coach · München"
 ---
 
 <!DOCTYPE html>
@@ -17,6 +17,7 @@ description: ""
 
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="Physiotherapie, Osteopathie, Funktional Fitness, München">
 
   <link rel="icon" href="/assets/images/figur.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/figur.svg" type="image/svg+xml">
@@ -24,7 +25,7 @@ description: ""
   <meta property="og:url" content="{{ site.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }} ">
-  <meta property="og:image" content="/assets/images/preview-image.png">
+  <meta property="og:image" content="{{ '/assets/images/preview-image.png' | absolute_url }}">
 
   <meta name="twitter:card" content="summary_large_image">
 
@@ -35,7 +36,7 @@ description: ""
       "name": "Christoph Reiner",
       "jobTitle": "Physiotherapeut",
       "url": "https://christophreiner.de"
-      "image": "/assets/images/preview-image.png",
+      "image": "{{ '/assets/images/preview-image.png' | absolute_url }}",
       "email": "mailto:info@christophreiner.de",
       "telephone": "+4901727199834",
       "address": {
