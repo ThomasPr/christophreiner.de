@@ -1,134 +1,179 @@
 ---
-layout: default
-title: "Christoph Reiner, Physiotherapeut"
+layout: null
+title: "Christoph Reiner, private Physiotherapie"
+description: ""
 ---
 
+<!DOCTYPE html>
+<html lang="de">
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand" style="width: 100%">
-    <a class="navbar-item">
-      <img src="assets/images/figur.svg">
-    </a>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item is-active" href="#home">Home</a>
-        <a class="navbar-item" href="#uber-mich">Über mich</a>
-        <a class="navbar-item" href="#kontakt">Kontakt</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script type="text/javascript" src="/assets/javascript/main.js"></script>
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <link rel="icon" href="/assets/images/figur.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/images/figur.svg" type="image/svg+xml">
+
+  <meta property="og:url" content="{{ site.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description }} ">
+  <meta property="og:image" content="/assets/images/preview-image.png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Christoph Reiner",
+      "jobTitle": "Physiotherapeut",
+      "url": "https://christophreiner.de"
+      "image": "/assets/images/preview-image.png",
+      "email": "mailto:info@christophreiner.de",
+      "telephone": "+4901727199834",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "München",
+        "postalCode": "81375",
+        "streetAddress": "Guardinistraße 67"
+      }
+    }
+    </script>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand" style="width: 100%">
+      <a href="#" class="navbar-item">
+        <img src="assets/images/figur.svg" alt="Logo">
+      </a>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+          <a class="navbar-item is-active" href="#home">Home</a>
+          <a class="navbar-item" href="#uber-mich">Über mich</a>
+          <a class="navbar-item" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+  </nav>
+
+
+  <section id="home" class="hero is-primary is-medium">
+    <div class="hero-body">
+      <h1 class="title">Christoph Reiner</h1>
+      <p class="subtitle">private Physiotherapie</p>
+    </div>
+  </section>
+
+
+  <section class="hero is-small is-success is-bold">
+    <div class="hero-body">
+      <p class="title is-size-5 has-text-centered">Ab 4. Oktober 2021 wieder für Sie verfügbar!</p>
+    </div>
+  </section>
+
+
+  <section id="uber-mich" class="hero is-medium">
+    <div class="hero-body">
+      <h2 class="title has-text-white">Über mich</h2>
+      <div class="content has-text-white">
+        <ul>
+          <li>5-jähriges Osteopathie Studium nach BAO mit klinischer Prüfung (1350&nbsp;Stunden)</li>
+          <li>Staatlich geprüfter Physiotherapeut </li>
+          <li>Manualtherapeut</li>
+          <li>Sportphysiotherapeut</li>
+          <li>Kinesiotape Zertifikat</li>
+          <li>FMS-zertifiziert</li>
+          <li>IFAA Dozent 2010&thinsp;-&thinsp;2015</li>
+          <li>Physiotherapeut bei TSV&nbsp;1860 Fußball und FC&nbsp;Augsburg (2010&thinsp;-&thinsp;2015)</li>
+        </ul>
       </div>
     </div>
-</nav>
+  </section>
 
 
-<section id="home" class="hero is-primary is-medium">
-  <div class="hero-body">
-    <h1 class="title">Christoph Reiner</h1>
-    <p class="subtitle">private Physiotherapie</p>
-  </div>
-</section>
-
-
-<section class="hero is-small is-success is-bold">
-  <div class="hero-body">
-    <p class="title is-size-5 has-text-centered">Ab 4. Oktober 2021 wieder für Sie verfügbar!</p>
-  </div>
-</section>
-
-
-<section id="uber-mich" class="hero is-medium">
-  <div class="hero-body">
-    <h2 class="title has-text-white">Über mich</h2>
-    <div class="content has-text-white">
-      <ul>
-        <li>5-jähriges Osteopathie Studium nach BAO mit klinischer Prüfung (1350&nbsp;Stunden)</li>
-        <li>Staatlich geprüfter Physiotherapeut </li>
-        <li>Manualtherapeut</li>
-        <li>Sportphysiotherapeut</li>
-        <li>Kinesiotape Zertifikat</li>
-        <li>FMS-zertifiziert</li>
-        <li>IFAA Dozent 2010&thinsp;-&thinsp;2015</li>
-        <li>Physiotherapeut bei TSV&nbsp;1860 Fußball und FC&nbsp;Augsburg (2010&thinsp;-&thinsp;2015)</li>
-      </ul>
+  <section class="hero is-warning is-bold">
+    <div class="hero-body">
+      <div class="title">Exklusiv Leistungen</div>
+      <p class="subtitle content">Sie haben keine Zeit für die Anfahrt zu einer Therapie oder einem Training im
+        Studio?<br>
+        Ich komme zu Ihnen und behandle oder unterstütze Sie Zuhause oder in Ihrem Büro.<br>
+        Kontaktieren Sie mich gerne!
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="hero is-warning is-bold">
-  <div class="hero-body">
-    <div class="title">Exklusiv Leistungen</div>
-    <p class="subtitle content">Sie haben keine Zeit für die Anfahrt zu einer Therapie oder einem Training im Studio?<br>
-      Ich komme zu Ihnen und behandle oder unterstütze Sie Zuhause oder in Ihrem Büro.<br>
-      Kontaktieren Sie mich gerne!
-    </p>
-  </div>
-</section>
-
-
-<section id="kontakt" class="section has-background-light">
-  <div class="columns">
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-          <figure id="mapContainer1" class="image is-2by1">
-            <img id="map1" src="" alt="Praxis Therapiehelden, Karlsplatz 5">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4">Praxis Therapiehelden, Karlsplatz 5</p>
-              <p class="subtitle is-5">Dienstag & Donnerstag</p>
+  <section id="kontakt" class="section has-background-light">
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure id="mapContainer1" class="image is-2by1">
+              <img id="map1" src="" alt="Praxis Therapiehelden, Karlsplatz 5">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Praxis Therapiehelden, Karlsplatz 5</p>
+                <p class="subtitle is-5">Dienstag & Donnerstag</p>
+              </div>
+            </div>
+            <div class="content">
+              Terminvereinbarung unter:
+              <a href="tel:+498954348764">089&nbsp;54348764</a> oder
+              <a href="mailto:kontakt@therapiehelden.de">kontakt@therapiehelden.de</a>.
             </div>
           </div>
-          <div class="content">
-            Terminvereinbarung unter:
-            <a href="tel:+498954348764">089&nbsp;54348764</a> oder
-            <a href="mailto:kontakt@therapiehelden.de">kontakt@therapiehelden.de</a>.
-          </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="card">
-        <div class="card-image">
-          <figure id="mapContainer2" class="image is-2by1">
-            <img id="map2" src="" alt="Praxis Berg, Herzog-Heinrich-Str. 6">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4">Praxis Berg, Herzog-Heinrich-Str. 6</p>
-              <p class="subtitle is-5">Freitag</p>
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure id="mapContainer2" class="image is-2by1">
+              <img id="map2" src="" alt="Praxis Berg, Herzog-Heinrich-Str. 6">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Praxis Berg, Herzog-Heinrich-Str. 6</p>
+                <p class="subtitle is-5">Freitag</p>
+              </div>
+            </div>
+            <div class="content">
+              Terminvereinbarung unter
+              <a href="tel:+4901727199834">0172&nbsp;7199834</a> oder
+              <a href="mailto:info@christophreiner.de">info@christophreiner.de</a>.
             </div>
           </div>
-          <div class="content">
-            Terminvereinbarung unter
-            <a href="tel:+4901727199834">0172&nbsp;7199834</a> oder
-            <a href="mailto:info@christophreiner.de">info@christophreiner.de</a>.
-          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<footer class="footer has-background-dark">
-  <div class="content has-text-centered has-text-white">
-    <address>
-      <strong class="has-text-white">Christoph&nbsp;Reiner</strong><br>
-      Guardinistraße&nbsp;67, 81375&nbsp;München<br>
-      <a class="has-text-white" href="tel:+4901727199834">0172&nbsp;7199834</a>, <a class="has-text-white" href="mailto:info@christophreiner.de">info@christophreiner.de</a>
-    </address>
-  </div>
-  <div class="content has-text-centered ">
-    <a class="has-text-white" href="https://thomas.preissler.me" target="_blank">Made with ♥️ by Thomas</a>
-  </div>
-</footer>
+  <footer class="footer has-background-dark">
+    <div class="content has-text-centered has-text-white">
+      <address>
+        <strong class="has-text-white">Christoph&nbsp;Reiner</strong><br>
+        Guardinistraße&nbsp;67, 81375&nbsp;München<br>
+        <a class="has-text-white" href="tel:+4901727199834">0172&nbsp;7199834</a>, <a class="has-text-white"
+          href="mailto:info@christophreiner.de">info@christophreiner.de</a>
+      </address>
+    </div>
+    <div class="content has-text-centered ">
+      <a class="has-text-white" href="https://thomas.preissler.me" target="_blank">Made with ♥️ by Thomas</a>
+    </div>
+  </footer>
 
 
-<script>
+</body>
 
-
-</script>
+</html>
