@@ -48,3 +48,14 @@ window.addEventListener("DOMContentLoaded", updateMap1);
 window.addEventListener("resize", updateMap1);
 window.addEventListener("DOMContentLoaded", updateMap2);
 window.addEventListener("resize", updateMap2);
+
+
+const manikinPadding = () => {
+  document.querySelectorAll('h2.manikin').forEach(element => {
+    console.log(element.clientHeight);
+    element.style.paddingLeft = element.clientHeight * 0.75 + "px";
+  });
+}
+window.addEventListener("DOMContentLoaded", manikinPadding);
+window.addEventListener("resize", manikinPadding);
+

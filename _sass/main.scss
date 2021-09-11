@@ -12,6 +12,9 @@ $hero-body-padding-tablet: 3rem 4.5rem;
 
 $footer-padding: 3rem 1.5rem;
 
+nav.navbar {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1);
+}
 
 nav a.navbar-item {
   &,
@@ -35,6 +38,16 @@ nav .navbar-item {
   border-radius: 1rem;
   margin: 5px;
 }
+
+
+h2.manikin {
+  border-bottom: 2px solid $primary;
+  background-image: url("/assets/images/figur.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+}
+
 
 #home {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(25, 25, 25) 100%), url(/assets/images/christoph.jpg);
