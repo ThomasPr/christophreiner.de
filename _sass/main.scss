@@ -49,6 +49,11 @@ h2.manikin {
 }
 
 
+.more-content {
+  display: none;
+}
+
+
 #home {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(25, 25, 25) 100%), url(/assets/images/christoph.jpg);
   background-size: contain;

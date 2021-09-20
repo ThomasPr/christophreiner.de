@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", domLoadedEvent => {
 });
 
 
+document.addEventListener("DOMContentLoaded", domLoadedEvent => {
+  document.querySelectorAll('.more-button').forEach(anchor => {
+    anchor.addEventListener('click', clickEvent => {
+      clickEvent.preventDefault();
+      clickEvent.currentTarget.parentElement.querySelector(".more-button").style.display = 'none';
+      clickEvent.currentTarget.parentElement.querySelector(".more-content").style.display = 'block';
+    });
+  });
+});
+
+
 const updateMap = (container, map, location) => {
   const containerWidth = document.getElementById(container).clientWidth;
   const mapWidth = Math.min(containerWidth, 640);
@@ -52,7 +63,6 @@ window.addEventListener("resize", updateMap2);
 
 const manikinPadding = () => {
   document.querySelectorAll('h2.manikin').forEach(element => {
-    console.log(element.clientHeight);
     element.style.paddingLeft = element.clientHeight * 0.75 + "px";
   });
 }
