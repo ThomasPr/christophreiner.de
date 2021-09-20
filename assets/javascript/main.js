@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", domLoadedEvent => {
   document.querySelectorAll('.more-button').forEach(anchor => {
     anchor.addEventListener('click', clickEvent => {
       clickEvent.preventDefault();
-      clickEvent.currentTarget.parentElement.querySelector(".more-button").style.display = 'none';
-      clickEvent.currentTarget.parentElement.querySelector(".more-content").style.display = 'block';
+      const parent = clickEvent.currentTarget.parentElement;
+      parent.querySelector(".more-button").style.display = 'none';
+      parent.querySelector(".more-content").style.display = 'block';
     });
   });
 });
