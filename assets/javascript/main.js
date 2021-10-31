@@ -40,26 +40,21 @@ document.addEventListener("DOMContentLoaded", domLoadedEvent => {
 });
 
 
-const updateMap = (container, map, location) => {
-  const containerWidth = document.getElementById(container).clientWidth;
+const updateMap = () => {
+  const containerWidth = document.getElementById("mapContainer").clientWidth;
   const mapWidth = Math.min(containerWidth, 640);
 
-  document.getElementById(map).src =
+  document.getElementById("map").src =
     "https://maps.googleapis.com/maps/api/staticmap" +
-    `?markers=color:0x00a1ff|${location}` +
+    `?markers=color:0x00a1ff|Karlsplatz+5,+München` +
     "&zoom=14" +
-    `&size=${mapWidth}x${Math.ceil(mapWidth / 2)}` +
+    `&size=${mapWidth}x${Math.floor(mapWidth / 2)}` +
     "&scale=" + (window.devicePixelRatio || 1) +
     "&key=AIzaSyCpnH4RQigHrMsZxB8yPdAGLURKh1psPOs";
 }
 
-const updateMap1 = () => updateMap("mapContainer1", "map1", "Karlsplatz+5,+München");
-const updateMap2 = () => updateMap("mapContainer2", "map2", "Herzog-Heinrich-Str.+6,+München");
-
-window.addEventListener("DOMContentLoaded", updateMap1);
-window.addEventListener("resize", updateMap1);
-window.addEventListener("DOMContentLoaded", updateMap2);
-window.addEventListener("resize", updateMap2);
+window.addEventListener("DOMContentLoaded", updateMap);
+window.addEventListener("resize", updateMap);
 
 
 const manikinPadding = () => {
