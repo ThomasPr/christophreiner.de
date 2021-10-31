@@ -30,23 +30,12 @@ description: "Physiotherapie · Osteopathie · Functional Fitness Coach · Münc
   <meta name="twitter:card" content="summary_large_image">
 
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Christoph Reiner",
-      "jobTitle": "Physiotherapeut",
-      "url": "https://christophreiner.de/",
-      "image": "{{ '/assets/images/christoph.png' | absolute_url }}",
-      "email": "mailto:info@christophreiner.de",
-      "telephone": "+4901727199834",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "München",
-        "postalCode": "81375",
-        "streetAddress": "Guardinistraße 67"
-      }
-    }
-    </script>
+    {% include local-business.schema.json %}
+  </script>
+
+  <script type="application/ld+json">
+    {% include person.schema.json %}
+  </script>
 </head>
 
 <body class="has-navbar-fixed-top">

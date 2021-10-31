@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Christoph Reiner",
+  "jobTitle": "Physiotherapeut",
+  "url": "https://christophreiner.de/",
+  "image": "{{ '/assets/images/christoph.png' | absolute_url }}",
+  "email": "mailto:info@christophreiner.de",
+  "telephone": "+4901727199834",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "München",
+    "postalCode": "81375",
+    "streetAddress": "Guardinistraße 67"
+  }
+}
