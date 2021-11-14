@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "abstract": {{ page.excerpt | jsonify }},
+  "description": {{ page.excerpt | jsonify }},
+  "articleBody": {{ page.content | strip_newlines | jsonify | strip_html }},
+  "image": "{{ page.image | absolute_url }}",
+  "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+  "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+  "author": {% include person.schema.json %},
+  "publisher": {% include person.schema.json %},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}

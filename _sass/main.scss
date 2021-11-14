@@ -12,61 +12,28 @@ $hero-body-padding-tablet: 3rem 4.5rem;
 
 $footer-padding: 3rem 1.5rem;
 
-nav.navbar {
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1);
-}
+$widescreen-enabled: false;
+$fullhd-enabled: false;
 
-nav a.navbar-item {
-  &,
-  &:hover,
-  &:focus {
-    background-color: white;
-    color: black;
-  }
-}
+// @import "bulma/bulma.sass";
 
-nav a.navbar-item.is-active {
-  &,
-  &:hover,
-  &:focus {
-    color: $navbar-item-active-color;
-    background-color: $navbar-item-active-background-color;
-  }
-}
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/layout/_all";
+@import "bulma/sass/helpers/_all";
 
-nav .navbar-item {
-  border-radius: 1rem;
-  margin: 5px;
-}
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/elements/container.sass";
+@import "bulma/sass/elements/content.sass";
+@import "bulma/sass/elements/icon.sass";
+@import "bulma/sass/elements/image.sass";
+@import "bulma/sass/elements/title.sass";
+
+@import "bulma/sass/components/card.sass";
+@import "bulma/sass/components/navbar.sass";
+
+@import "bulma/sass/grid/columns.sass";
 
 
-h2.manikin {
-  border-bottom: 2px solid $primary;
-  background-image: url("/assets/images/figur.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 10px;
-}
-
-
-.more-content {
-  display: none;
-}
-
-
-#home {
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(25, 25, 25) 100%), url(/assets/images/christoph.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-#uber-mich {
-  background-image: linear-gradient(to left, rgba(255,255,255,0) 0%, rgb(25, 25, 25) 75%), url(/assets/images/behandlung.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-
-@import "bulma/bulma.sass";
+@import "index.scss";
+@import "blogpost.scss";
