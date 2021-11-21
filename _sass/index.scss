@@ -86,6 +86,10 @@
       .card-content {
         height: 100%;
 
+        .title {
+          margin-bottom: 0.75rem;
+        }
+
         @include mobile {
           padding: 1.5rem 0.75rem;
         }
