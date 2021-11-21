@@ -2384,6 +2384,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 #index #blog .card .card-content { height: 100%; }
 
+#index #blog .card .card-content .title { margin-bottom: 0.75rem; }
+
 @media screen and (max-width: 768px) { #index #blog .card .card-content { padding: 1.5rem 0.75rem; } }
 
 #index #blog .card .button { border-radius: 0; }
