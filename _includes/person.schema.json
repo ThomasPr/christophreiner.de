@@ -12,5 +12,10 @@
     "addressLocality": "München",
     "postalCode": "81375",
     "streetAddress": "Guardinistraße 67"
-  }
+  },
+  "sameAs": [
+    "https://www.facebook.com/chris_reinerpt-115220213940542/",
+    "https://www.instagram.com/chris_reinerpt/",
+    "https://www.linkedin.com/in/christoph-reiner-b05a5090"
+  ]
 }
