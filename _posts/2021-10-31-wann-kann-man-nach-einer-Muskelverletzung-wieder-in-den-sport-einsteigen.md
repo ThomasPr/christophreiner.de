@@ -1,5 +1,5 @@
 ---
-title:  "Wann kann man „sicher“ wieder einsteigen in den Sport nach einer Muskelverletzung an den Hamstrings (hinterer Oberschenkelmuskel)?"
+title:  "Wann kann man nach einer Muskelverletzung wieder in den Sport einsteigen?"
 date:   2021-10-31
 categories: blog
 layout: blogpost
