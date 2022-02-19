@@ -63,6 +63,21 @@
   }
 
 
+  #review {
+    .image img {
+      height: 70px;
+      border-radius: 100%;
+    }
+
+    .stars {
+      color: orange;
+    }
+
+    .content {
+      font-style: italic;
+    }
+  }
+
   #blog {
     padding: 0rem 0.75rem;
     overflow-x: auto;
