@@ -2400,7 +2400,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 #index #uber-mich { background-image: linear-gradient(to left, rgba(192, 116, 116, 0) 0%, #191919 75%), url(/assets/images/behandlung.jpg); background-size: cover; background-repeat: no-repeat; background-position: right center; }
 
-#index #review .image img { height: 70px; border-radius: 100%; }
+#index #review .image img { height: 70px; width: 70px; border-radius: 100%; }
 
 #index #review .stars { color: orange; }
 
