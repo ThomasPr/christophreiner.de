@@ -2116,6 +2116,32 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .hero.is-fullheight-with-navbar { min-height: calc(100vh - 3.25rem); }
 
+.media { align-items: flex-start; display: flex; text-align: inherit; }
+
+.media .content:not(:last-child) { margin-bottom: 0.75rem; }
+
+.media .media { border-top: 1px solid rgba(219, 219, 219, 0.5); display: flex; padding-top: 0.75rem; }
+
+.media .media .content:not(:last-child), .media .media .control:not(:last-child) { margin-bottom: 0.5rem; }
+
+.media .media .media { padding-top: 0.5rem; }
+
+.media .media .media + .media { margin-top: 0.5rem; }
+
+.media + .media { border-top: 1px solid rgba(219, 219, 219, 0.5); margin-top: 1rem; padding-top: 1rem; }
+
+.media.is-large + .media { margin-top: 1.5rem; padding-top: 1.5rem; }
+
+.media-left, .media-right { flex-basis: auto; flex-grow: 0; flex-shrink: 0; }
+
+.media-left { margin-right: 1rem; }
+
+.media-right { margin-left: 1rem; }
+
+.media-content { flex-basis: auto; flex-grow: 1; flex-shrink: 1; text-align: inherit; }
+
+@media screen and (max-width: 768px) { .media-content { overflow-x: auto; } }
+
 .column { display: block; flex-basis: 0; flex-grow: 1; flex-shrink: 1; padding: 0.75rem; }
 
 .columns.is-mobile > .column.is-narrow { flex: none; width: unset; }
@@ -2373,6 +2399,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 #index #home { background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #191919 100%), url(/assets/images/christoph.jpg); background-size: contain; background-repeat: no-repeat; background-position: right center; }
 
 #index #uber-mich { background-image: linear-gradient(to left, rgba(192, 116, 116, 0) 0%, #191919 75%), url(/assets/images/behandlung.jpg); background-size: cover; background-repeat: no-repeat; background-position: right center; }
+
+#index #review .image img { height: 70px; border-radius: 100%; }
+
+#index #review .stars { color: orange; }
+
+#index #review .content { font-style: italic; }
 
 #index #blog { padding: 0rem 0.75rem; overflow-x: auto; }
 
