@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", domLoadedEvent => {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', clickEvent => {
       clickEvent.preventDefault();
 
@@ -64,4 +64,13 @@ const manikinPadding = () => {
 }
 window.addEventListener("DOMContentLoaded", manikinPadding);
 window.addEventListener("resize", manikinPadding);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const impressumContent = document.getElementById("impressum-content")
+  document.getElementById("impressum-link").addEventListener("click", clickEvent => {
+    clickEvent.preventDefault();
+    impressumContent.hidden = !impressumContent.hidden;
+  })
+});
 
