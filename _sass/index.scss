@@ -79,6 +79,17 @@
     }
   }
 
+
+  #terminbuchung {
+    .terminbuchung {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+    }
+  }
+
+
   #blog {
     padding: 0rem 0.75rem;
     overflow-x: auto;
