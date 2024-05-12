@@ -3,7 +3,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 
 plugins:
   - jekyll-sitemap
-  - jekyll-last-modified-at
   - jekyll-feed
 
 
