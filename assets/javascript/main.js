@@ -41,12 +41,20 @@ document.addEventListener("DOMContentLoaded", domLoadedEvent => {
 
 
 const updateMap = () => {
-  const containerWidth = document.getElementById("mapContainer").clientWidth;
+  const containerWidth = document.getElementById("mapContainer1").clientWidth;
   const mapWidth = Math.min(containerWidth, 640);
 
-  document.getElementById("map").src =
+  document.getElementById("map1").src =
     "https://maps.googleapis.com/maps/api/staticmap" +
     `?markers=color:0x00a1ff|Karlsplatz+5,+München` +
+    "&zoom=14" +
+    `&size=${mapWidth}x${Math.floor(mapWidth / 2)}` +
+    "&scale=" + (window.devicePixelRatio || 1) +
+    "&key=AIzaSyCpnH4RQigHrMsZxB8yPdAGLURKh1psPOs";
+
+  document.getElementById("map2").src =
+    "https://maps.googleapis.com/maps/api/staticmap" +
+    `?markers=color:0x00a1ff|Agnes-Bernauer-Str.+123,+München` +
     "&zoom=14" +
     `&size=${mapWidth}x${Math.floor(mapWidth / 2)}` +
     "&scale=" + (window.devicePixelRatio || 1) +
