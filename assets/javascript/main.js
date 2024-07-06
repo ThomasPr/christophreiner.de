@@ -55,7 +55,7 @@ const updateMap = () => {
   document.getElementById("map2").src =
     "https://maps.googleapis.com/maps/api/staticmap" +
     `?markers=color:0x00a1ff|Agnes-Bernauer-Str.+123,+München` +
-    "&zoom=14" +
+    "&zoom=13" +
     `&size=${mapWidth}x${Math.floor(mapWidth / 2)}` +
     "&scale=" + (window.devicePixelRatio || 1) +
     "&key=AIzaSyCpnH4RQigHrMsZxB8yPdAGLURKh1psPOs";
