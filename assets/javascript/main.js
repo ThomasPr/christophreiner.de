@@ -46,7 +46,7 @@ const updateMap = () => {
 
   document.getElementById("map1").src =
     "https://maps.googleapis.com/maps/api/staticmap" +
-    `?markers=color:0x00a1ff|Karlsplatz+5,+München` +
+    `?markers=color:0x00a1ff|Schwanthalerstrasse+5,+München` +
     "&zoom=14" +
     `&size=${mapWidth}x${Math.floor(mapWidth / 2)}` +
     "&scale=" + (window.devicePixelRatio || 1) +
